@@ -107,6 +107,8 @@ class EloquentDataSource extends DataSource
 		];
 
 		$this->nextQueryModel = null;
+
+		if ($this->detectDuplicateQueries) $this->duplicateQueries = [];
 	}
 
 	// Start listening to Eloquent events
