@@ -1,3 +1,23 @@
+5.3.5
+
+- added support for PHPUnit 11 and Pest 3 (reported by simbig, thanks!)
+- Added Xdebug support to vanilla integration (reported by edxeth, thanks!)
+- improved collecting of Eloquent queries to better support escaped and named bindings (reported by DeBug88, thanks!)
+- fixed crash when no response is returned when collecting Guzzle HTTP requests (implemented by N1ebieski, thanks!)
+- fixed calling Artisan command inside Artisan command leading to multiple invalid requests being collected (reported by mattvb91, thanks!)
+- fixed duplicate N+1 queries being collected when running on Laravel Octane (implemented by yahya09, thanks!)
+
+5.3.4
+
+- fixed handling of Guzzle exceptions with no response when collecting HTTP requests
+- fixed compatibility with old PHP versions (<7.4) in file storage (reported by SheylaSilvana, thanks!)
+
+5.3.3
+
+- fixed collecting HTTP requests consuming the response body (reported by mikethea1, thanks!)
+- fixed PHP 8.4 incompatibility in vanilla integration (implemented by txdFabio, thanks!)
+- updated Clockwork App (5.3.2)
+
 5.3.2
 
 - fixed crash collecting Laravel on-demand notifications with database or broadcast channels (reported by michaelthedev, thanks!) 
